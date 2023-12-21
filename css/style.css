@@ -58,8 +58,8 @@ body {
     text-align: right;
 }
 
-/* Media query for mobile devices */
-@media only screen and (max-width: 600px) {
+/* Media query for tablets and larger phones */
+@media only screen and (max-width: 768px) {
     .poem {
         font-size: 24px;
         /* Adjust the font size for smaller screens */
@@ -68,4 +68,26 @@ body {
     }
 
     /* Add more responsive styles as needed */
+
+    .poem span {
+        transition: color 0.2s;
+        /* Faster transition for smaller screens */
+    }
+}
+
+/* Media query for smaller phones */
+@media only screen and (max-width: 480px) {
+    .poem {
+        font-size: 18px;
+        /* Adjust the font size for even smaller screens */
+        line-height: 24px;
+        /* Adjust the line height for even smaller screens */
+    }
+
+    /* Add more responsive styles as needed */
+
+    .poem span {
+        transition: color 0.1s;
+        /* Faster transition for even smaller screens */
+    }
 }
