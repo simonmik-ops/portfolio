@@ -57,3 +57,15 @@ body {
 .right-justified {
     text-align: right;
 }
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    .poem {
+        font-size: 24px;
+        /* Adjust the font size for smaller screens */
+        line-height: 30px;
+        /* Adjust the line height for smaller screens */
+    }
+
+    /* Add more responsive styles as needed */
+}
