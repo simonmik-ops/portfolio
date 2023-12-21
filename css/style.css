@@ -3,15 +3,11 @@
 
 body {
     overflow: hidden;
-    /* Disable scrolling */
     margin: 0;
-    /* Remove default margin */
     height: 100vh;
-    /* Set the body height to the full viewport height */
     background-color: black;
     font-family: 'Source Code Pro', monospace;
     transition: background-color 0.3s;
-    /* Add transition for smooth color change */
 }
 
 .container {
@@ -19,37 +15,27 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    /* Full height of the viewport */
 }
 
 .poem {
     line-height: 40px;
-    /* Increased line height for better readability */
     font-size: 45px;
-    /* Increased font size */
     text-align: center;
-    /* Center the text within the poem div */
 }
 
 .space-line {
     margin-bottom: 20px;
-    /* Adjust the margin as needed */
 }
-
-/* ... (existing CSS rules) ... */
 
 .blank-line {
     height: 20px;
-    /* Adjust the height as needed */
 }
 
 .poem span {
     display: inline-block;
     transition: color 0.3s;
-    /* Adjust transition duration */
 }
 
-/* Use classes for line justification if needed */
 .left-justified {
     text-align: left;
 }
@@ -58,20 +44,53 @@ body {
     text-align: right;
 }
 
+/* Styles for the chat button */
+.chat-button {
+    display: block;
+    padding: 10px 20px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.chat-button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
 /* Media query for tablets and larger phones */
 @media only screen and (max-width: 768px) {
     .poem {
         font-size: 24px;
-        /* Adjust the font size for smaller screens */
         line-height: 30px;
-        /* Adjust the line height for smaller screens */
     }
 
-    /* Add more responsive styles as needed */
+    .chat-button {
+        display: block;
+        padding: 10px 20px;
+        margin: 20px auto;
+        background-color: #ffffff;
+        color: #000000;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .chat-button:hover {
+        background-color: #000000;
+        color: #ffffff;
+    }
 
     .poem span {
         transition: color 0.2s;
-        /* Faster transition for smaller screens */
+
     }
 }
 
@@ -79,15 +98,11 @@ body {
 @media only screen and (max-width: 480px) {
     .poem {
         font-size: 18px;
-        /* Adjust the font size for even smaller screens */
+
         line-height: 24px;
-        /* Adjust the line height for even smaller screens */
+
     }
-
-    /* Add more responsive styles as needed */
-
     .poem span {
         transition: color 0.1s;
-        /* Faster transition for even smaller screens */
     }
 }
