@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@800;900&display=swap');
 
 body {
-    /* Remove or modify the following line */
-    overflow: hidden;
+    overflow: auto;
+    /* Change 'hidden' to 'auto' */
     margin: 0;
     height: 100vh;
     background-color: black;
