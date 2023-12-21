@@ -43,6 +43,15 @@
                     cancelAnimationFrame(animationFrameId);
                 }
 
+                 // For mobile
+            poem.addEventListener('touchmove', function (event) {
+            const touch = event.touches[0];
+             if (touch) {
+            handleMove(touch);
+        }
+    });
+
+
                 animationFrameId = requestAnimationFrame(function () {
                     spans.forEach(span => {
                         const rect = span.getBoundingClientRect();
