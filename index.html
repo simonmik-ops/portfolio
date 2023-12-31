@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secret Colour Circle</title>
+    <title>Nice to meet you</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -70,14 +70,18 @@
                     });
                 });
             });
+            
+            document.addEventListener("DOMContentLoaded", function() {
+    document.body.style.visibility = "visible";
+});
 
-            document.body.addEventListener('click', function () {
-                if (document.body.style.backgroundColor === 'white') {
-                    document.body.style.backgroundColor = 'black';
-                } else {
-                    document.body.style.backgroundColor = 'white';
-                }
-            });
+document.body.addEventListener('click', function () {
+    if (document.body.style.backgroundColor === 'white') {
+        document.body.style.backgroundColor = 'black';
+    } else {
+        document.body.style.backgroundColor = 'white';
+    }
+});
         });
     </script>
 </body>
